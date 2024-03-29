@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="Mountain Landscape.jpg" alt="Mountain Landscape" width="300" height="200" title="Mountain Landscape">
+        <p class="copyright">Copyright iStock</p>
+    </div>
+    
+    <div class="image-container">
+        <img src="Sunset Beach.jpg" alt="Sunset Beach" width="300" height="200" title="Sunset Beach">
+        <p class="copyright">Copyright Freepik</p>
+    </div>
+    
+    <div class="image-container">
+        <img src="City Skyline.jpg" alt="City Skyline" width="300" height="200" title="City Skyline">
+        <p class="copyright">Copyright iStock</p>
+    </div>
+</body>
+</html>
